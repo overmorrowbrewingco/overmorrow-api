@@ -1,6 +1,23 @@
+# Install
+
+Ensure you have a Heroku app and Postgres addon attached to it.
+
+Swap out your app name in `config.yaml`. Then add the following git remotes:
+
+- The Heroku app: `heroku git:remote -a <your_app_name>`
+- Your git repo: `git remote add origin https://github.com/<username>/<repo>`
+
+Run `hasura console`. You can now make changes to the heroku app’s database! Migrations will be created locally, which you may commit to source control.
+
+For more info about getting started with Hasura on Heroku, see the [quickstart](https://docs.hasura.io/1.0/graphql/manual/getting-started/heroku-simple.html).
+
+For more info about migrations on Hasura, see [the docs](https://docs.hasura.io/1.0/graphql/manual/migrations/index.html).
+
+Below is all the Hasura boilerplate from the original cloned repo :stuck_out_tongue:
+
 # Hasura GraphQL Engine on Heroku
 
-[![GitHub stars](https://img.shields.io/github/stars/hasura/graphql-engine.svg?style=social&label=Star)](https://github.com/hasura/graphql-engine) 
+[![GitHub stars](https://img.shields.io/github/stars/hasura/graphql-engine.svg?style=social&label=Star)](https://github.com/hasura/graphql-engine)
 <a href="https://discord.gg/vBPpJkS"><img src="https://img.shields.io/badge/chat-discord-brightgreen.svg?logo=discord&style=flat"></a>
 <a href="https://twitter.com/intent/follow?screen_name=HasuraHQ"><img src="https://img.shields.io/badge/Follow-HasuraHQ-blue.svg?style=flat&logo=twitter"></a>
 <a href="https://eepurl.com/dBUfJ5"><img src="https://img.shields.io/badge/newsletter-subscribe-yellow.svg?style=flat"></a>
@@ -11,16 +28,16 @@ triggers**](https://github.com/hasura/graphql-engine/blob/master/event-triggers.
 on database events for asynchronous business logic.
 
 Hasura helps you build GraphQL apps backed by Postgres or incrementally move to
-GraphQL for existing applications using Postgres. 
+GraphQL for existing applications using Postgres.
 
 Deploy Hasura GraphQL Engine on Heroku and get a GraphQL endpoint in under 30 seconds :clock1:
 
-Read more at [hasura.io](https://hasura.io) and the [docs](https://docs.hasura.io). 
-
+Read more at [hasura.io](https://hasura.io) and the [docs](https://docs.hasura.io).
 
 ## Quickstart
 
-### 1. Deploy to Heroku 
+### 1. Deploy to Heroku
+
 Deploy to Heroku and instantly get a realtime GraphQL API backed by Heroku Postgres:
 
 [![Deploy to
@@ -32,7 +49,7 @@ Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?
 
 Once the deployment is complete, click on the `View` button as marked above.
 This will take you to the Hasura Console, where you can create a table and make
-your first GraphQL query. 
+your first GraphQL query.
 
 ![Hasura Console](https://graphql-engine-cdn.hasura.io/heroku-repo/assets/hasura_console.png)
 
@@ -42,7 +59,7 @@ Navigate to `Data -> Create table` on the console and create a table called
 `profile` with the following columns:
 
 | name   | type                     |
-|--------|--------------------------|
+| ------ | ------------------------ |
 | `id`   | Integer (auto-increment) |
 | `name` | Text                     |
 
@@ -54,6 +71,7 @@ Choose `id` as the Primary key and click the `Create` button.
 
 Once the table is created, go to the `Insert Row` tab and insert some sample
 rows:
+
 ```
 Thor
 Iron Man
@@ -82,12 +100,12 @@ query {
 ## Support & Troubleshooting
 
 Feel free to talk to us on [Discord](https://discord.gg/vBPpJkS) about anything
-and everything. You can also contact us using one of the following channels: 
+and everything. You can also contact us using one of the following channels:
 
-* Support & feedback: [Discord](https://discord.gg/vBPpJkS)
-* Issue & bug tracking: [GitHub issues](https://github.com/hasura/graphql-engine/issues)
-* Follow product updates: [@HasuraHQ](https://twitter.com/hasurahq)
-* Talk to us on our [website chat](https://hasura.io).
+- Support & feedback: [Discord](https://discord.gg/vBPpJkS)
+- Issue & bug tracking: [GitHub issues](https://github.com/hasura/graphql-engine/issues)
+- Follow product updates: [@HasuraHQ](https://twitter.com/hasurahq)
+- Talk to us on our [website chat](https://hasura.io).
 
 ## Next steps
 
