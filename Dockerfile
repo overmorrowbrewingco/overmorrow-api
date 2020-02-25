@@ -1,7 +1,9 @@
-FROM hasura/graphql-engine:v1.1.0
+FROM hasura/graphql-engine:v1.1.0.cli-migrations
 
 # Enable the console
 ENV HASURA_GRAPHQL_ENABLE_CONSOLE=true
+
+COPY migrations hasura-migrations
 
 # Change $DATABASE_URL to your heroku postgres URL if you're not using
 # the primary postgres instance in your app
@@ -18,6 +20,6 @@ CMD graphql-engine \
 #    serve \
 #    --server-port $PORT \
 #    --access-key XXXXX \
-#    --auth-hook https://myapp.com/hasura-webhook 
+#    --auth-hook https://myapp.com/hasura-webhook
 #
 # Console can be enable/disabled by the env var HASURA_GRAPHQL_ENABLE_CONSOLE
