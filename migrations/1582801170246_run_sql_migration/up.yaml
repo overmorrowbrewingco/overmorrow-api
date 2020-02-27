@@ -1,0 +1,7 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: |-
+      ALTER TABLE customer ADD CONSTRAINT
+        customer_customer_type_fkey FOREIGN KEY (customer_type) REFERENCES customer_type;
+  type: run_sql

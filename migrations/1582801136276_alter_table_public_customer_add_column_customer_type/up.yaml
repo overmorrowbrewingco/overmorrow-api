@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."customer" ADD COLUMN "customer_type" text NOT NULL;
+  type: run_sql

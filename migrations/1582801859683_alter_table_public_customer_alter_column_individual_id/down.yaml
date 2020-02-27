@@ -1,0 +1,9 @@
+- args:
+    custom_column_names:
+      created_at: createdAt
+    custom_root_fields: {}
+    table:
+      name: customer
+      schema: public
+  type: set_table_custom_fields
+  version: 2

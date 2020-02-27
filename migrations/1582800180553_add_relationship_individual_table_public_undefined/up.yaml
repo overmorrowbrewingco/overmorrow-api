@@ -1,0 +1,8 @@
+- args:
+    name: individual
+    table:
+      name: customer
+      schema: public
+    using:
+      foreign_key_constraint_on: individual_id
+  type: create_object_relationship

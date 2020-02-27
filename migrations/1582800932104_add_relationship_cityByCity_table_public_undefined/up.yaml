@@ -1,0 +1,8 @@
+- args:
+    name: cityByCity
+    table:
+      name: business_location
+      schema: public
+    using:
+      foreign_key_constraint_on: city
+  type: create_object_relationship

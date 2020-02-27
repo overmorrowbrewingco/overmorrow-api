@@ -1,0 +1,18 @@
+- args:
+    relationship: businesses
+    table:
+      name: customer
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: individuals
+    table:
+      name: customer
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: customer
+    table:
+      name: individual
+      schema: public
+  type: drop_relationship

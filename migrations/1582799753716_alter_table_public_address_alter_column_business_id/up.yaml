@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: alter table "public"."address" rename column "business_id" to "business_location_id";
+  type: run_sql

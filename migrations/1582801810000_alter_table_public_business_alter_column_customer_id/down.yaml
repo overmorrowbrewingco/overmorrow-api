@@ -1,0 +1,15 @@
+- args:
+    custom_column_names:
+      created_at: createdAt
+      updated_at: updatedAt
+    custom_root_fields: {}
+    table:
+      name: business
+      schema: public
+  type: set_table_custom_fields
+  version: 2
+- args:
+    cascade: false
+    read_only: false
+    sql: COMMENT ON COLUMN "public"."business"."customer_id" IS E'customerId';
+  type: run_sql

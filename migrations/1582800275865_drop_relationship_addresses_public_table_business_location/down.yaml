@@ -1,0 +1,12 @@
+- args:
+    name: addresses
+    table:
+      name: business_location
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: business_location_id
+        table:
+          name: address
+          schema: public
+  type: create_array_relationship

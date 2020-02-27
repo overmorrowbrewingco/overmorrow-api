@@ -1,0 +1,10 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: |-
+      alter table "public"."address"
+                 add constraint "address_business_location_id_fkey"
+                 foreign key ("business_location_id")
+                 references "public"."business_location"
+                 ("id") on update restrict on delete restrict;
+  type: run_sql

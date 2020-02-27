@@ -1,0 +1,32 @@
+- args:
+    name: businesses
+    table:
+      name: customer
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: customer_id
+        table:
+          name: business
+          schema: public
+  type: create_array_relationship
+- args:
+    name: individuals
+    table:
+      name: customer
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: customer_id
+        table:
+          name: individual
+          schema: public
+  type: create_array_relationship
+- args:
+    name: customer
+    table:
+      name: individual
+      schema: public
+    using:
+      foreign_key_constraint_on: customer_id
+  type: create_object_relationship

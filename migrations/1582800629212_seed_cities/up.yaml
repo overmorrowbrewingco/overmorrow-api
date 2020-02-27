@@ -1,0 +1,8 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: |-
+      INSERT INTO city (value, comment) VALUES
+        ('Hanoi', 'The capital of Vietnam'),
+        ('Ho Chi Minh City', 'The second-largest city in Vietnam');
+  type: run_sql

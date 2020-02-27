@@ -1,0 +1,10 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: |-
+      alter table "public"."customer"
+                 add constraint "customer_individual_id_fkey"
+                 foreign key ("individual_id")
+                 references "public"."individual"
+                 ("id") on update cascade on delete cascade;
+  type: run_sql

@@ -1,0 +1,14 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."business" ALTER COLUMN "updated_at" TYPE timestamp
+      with time zone;
+  type: run_sql
+- args:
+    custom_column_names: {}
+    custom_root_fields: {}
+    table:
+      name: business
+      schema: public
+  type: set_table_custom_fields
+  version: 2

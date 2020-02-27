@@ -1,0 +1,9 @@
+- args:
+    custom_column_names:
+      address_line_3: addressLine3
+    custom_root_fields: {}
+    table:
+      name: address
+      schema: public
+  type: set_table_custom_fields
+  version: 2

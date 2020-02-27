@@ -1,0 +1,8 @@
+- args:
+    name: customerTypeByCustomerType
+    table:
+      name: customer
+      schema: public
+    using:
+      foreign_key_constraint_on: customer_type
+  type: create_object_relationship
