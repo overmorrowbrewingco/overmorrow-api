@@ -1,0 +1,12 @@
+- args:
+    name: businesses
+    table:
+      name: business_account_status
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: account_status
+        table:
+          name: business
+          schema: public
+  type: create_array_relationship

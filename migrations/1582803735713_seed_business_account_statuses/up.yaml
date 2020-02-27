@@ -1,0 +1,10 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: |-
+      INSERT INTO business_account_status (value, comment) VALUES
+        ('potential', 'A potential lead for a future account'),
+        ('pending', 'A potential account that has been contacted but not finalized'),
+        ('active', 'An active account'),
+        ('inactive', 'An inactive account');
+  type: run_sql

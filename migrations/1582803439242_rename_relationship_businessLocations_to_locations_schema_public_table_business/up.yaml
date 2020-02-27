@@ -1,0 +1,7 @@
+- args:
+    name: businessLocations
+    new_name: locations
+    table:
+      name: business
+      schema: public
+  type: rename_relationship

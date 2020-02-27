@@ -1,0 +1,10 @@
+- args:
+    custom_column_names:
+      created_at: createdAt
+      updated_at: updatedAt
+    custom_root_fields: {}
+    table:
+      name: individual
+      schema: public
+  type: set_table_custom_fields
+  version: 2

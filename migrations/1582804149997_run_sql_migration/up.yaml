@@ -1,0 +1,7 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: |-
+      ALTER TABLE business ADD CONSTRAINT
+        business_account_status_fkey FOREIGN KEY (account_status) REFERENCES business_account_status;
+  type: run_sql

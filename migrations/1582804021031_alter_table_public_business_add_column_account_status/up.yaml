@@ -1,0 +1,6 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."business" ADD COLUMN "account_status" text NOT NULL
+      DEFAULT 'potential';
+  type: run_sql

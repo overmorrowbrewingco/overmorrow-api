@@ -1,0 +1,8 @@
+- args:
+    name: business_account_status
+    table:
+      name: business
+      schema: public
+    using:
+      foreign_key_constraint_on: account_status
+  type: create_object_relationship

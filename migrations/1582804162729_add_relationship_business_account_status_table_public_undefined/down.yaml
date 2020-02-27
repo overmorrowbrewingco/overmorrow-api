@@ -1,0 +1,6 @@
+- args:
+    relationship: business_account_status
+    table:
+      name: business
+      schema: public
+  type: drop_relationship

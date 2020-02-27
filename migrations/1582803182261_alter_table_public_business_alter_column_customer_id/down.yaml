@@ -1,0 +1,9 @@
+- args:
+    custom_column_names:
+      customer_id: customerId
+    custom_root_fields: {}
+    table:
+      name: business
+      schema: public
+  type: set_table_custom_fields
+  version: 2
