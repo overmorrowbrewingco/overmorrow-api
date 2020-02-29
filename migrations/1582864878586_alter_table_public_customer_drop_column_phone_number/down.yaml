@@ -1,0 +1,10 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."customer" ADD COLUMN "phone_number" text;
+  type: run_sql
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."customer" ALTER COLUMN "phone_number" DROP NOT NULL;
+  type: run_sql

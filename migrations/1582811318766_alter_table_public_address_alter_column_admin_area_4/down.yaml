@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."address" ALTER COLUMN "admin_area_4" SET NOT NULL;
+  type: run_sql

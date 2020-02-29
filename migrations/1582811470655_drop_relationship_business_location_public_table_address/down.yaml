@@ -1,0 +1,8 @@
+- args:
+    name: business_location
+    table:
+      name: address
+      schema: public
+    using:
+      foreign_key_constraint_on: business_location_id
+  type: create_object_relationship

@@ -1,0 +1,13 @@
+- args:
+    name: business
+    table:
+      name: customer
+      schema: public
+    using:
+      manual_configuration:
+        column_mapping:
+          id: customer_id
+        remote_table:
+          name: business
+          schema: public
+  type: create_object_relationship
