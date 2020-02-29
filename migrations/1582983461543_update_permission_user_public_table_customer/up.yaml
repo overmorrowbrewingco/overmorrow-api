@@ -1,0 +1,18 @@
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - created_at
+      - customer_type
+      - description
+      - id
+      - name
+      - updated_at
+      computed_fields: []
+      filter: {}
+      limit: null
+    role: user
+    table:
+      name: customer
+      schema: public
+  type: create_select_permission
