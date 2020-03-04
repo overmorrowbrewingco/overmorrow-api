@@ -1,0 +1,24 @@
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - auth0_id
+      - created_at
+      - email
+      - family_name
+      - given_name
+      - id
+      - last_seen
+      - role
+      - updated_at
+      - username
+      computed_fields: []
+      filter:
+        auth0_id:
+          _eq: X-Hasura-User-Id
+      limit: null
+    role: user
+    table:
+      name: user
+      schema: public
+  type: create_select_permission

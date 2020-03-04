@@ -1,0 +1,6 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: alter table "public"."note" add foreign key ("parent_id") references "public"."business"("id")
+      on update cascade on delete cascade;
+  type: run_sql

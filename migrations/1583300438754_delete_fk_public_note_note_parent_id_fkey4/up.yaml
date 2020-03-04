@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: alter table "public"."note" drop constraint "note_parent_id_fkey4";
+  type: run_sql

@@ -1,0 +1,7 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: |-
+      ALTER TABLE note ADD CONSTRAINT
+        parent_type_fkey FOREIGN KEY (parent_type) REFERENCES note_type;
+  type: run_sql

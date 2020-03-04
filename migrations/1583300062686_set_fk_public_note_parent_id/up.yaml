@@ -1,0 +1,10 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: |-
+      alter table "public"."note"
+                 add constraint "note_parent_id_fkey4"
+                 foreign key ("parent_id")
+                 references "public"."individual"
+                 ("id") on update restrict on delete restrict;
+  type: run_sql

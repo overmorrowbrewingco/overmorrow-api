@@ -1,0 +1,10 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: |-
+      alter table "public"."note"
+                 add constraint "note_parent_id_fkey2"
+                 foreign key ("parent_id")
+                 references "public"."business_location"
+                 ("id") on update cascade on delete cascade;
+  type: run_sql
