@@ -1,0 +1,8 @@
+- args:
+    name: contact
+    table:
+      name: business
+      schema: public
+    using:
+      foreign_key_constraint_on: primary_contact_id
+  type: create_object_relationship

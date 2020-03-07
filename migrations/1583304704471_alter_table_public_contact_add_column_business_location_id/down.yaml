@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."contact" DROP COLUMN "business_location_id";
+  type: run_sql

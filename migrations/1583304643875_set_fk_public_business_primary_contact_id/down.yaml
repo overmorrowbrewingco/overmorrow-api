@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: alter table "public"."business" drop constraint "business_primary_contact_id_fkey";
+  type: run_sql

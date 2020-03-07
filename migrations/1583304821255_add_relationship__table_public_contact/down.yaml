@@ -1,0 +1,6 @@
+- args:
+    relationship: business_location
+    table:
+      name: contact
+      schema: public
+  type: drop_relationship

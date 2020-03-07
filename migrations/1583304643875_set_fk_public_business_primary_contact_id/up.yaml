@@ -1,0 +1,10 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: |-
+      alter table "public"."business"
+                 add constraint "business_primary_contact_id_fkey"
+                 foreign key ("primary_contact_id")
+                 references "public"."contact"
+                 ("id") on update set null on delete set null;
+  type: run_sql

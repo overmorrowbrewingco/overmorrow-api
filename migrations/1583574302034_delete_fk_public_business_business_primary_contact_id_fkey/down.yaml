@@ -1,0 +1,6 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: alter table "public"."business" add foreign key ("primary_contact_id") references
+      "public"."contact"("id") on update set null on delete set null;
+  type: run_sql

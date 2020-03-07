@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: alter table "public"."contact" rename column "facebook_handle" to "facebook_username";
+  type: run_sql

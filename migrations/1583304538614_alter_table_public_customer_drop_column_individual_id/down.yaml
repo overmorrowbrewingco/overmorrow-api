@@ -1,0 +1,17 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."customer" ADD COLUMN "individual_id" uuid;
+  type: run_sql
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."customer" ALTER COLUMN "individual_id" DROP NOT NULL;
+  type: run_sql
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."customer" ADD CONSTRAINT customer_individual_id_fkey
+      FOREIGN KEY (individual_id) REFERENCES "public"."individual" (id) ON DELETE
+      cascade ON UPDATE cascade;
+  type: run_sql

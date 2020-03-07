@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."business" DROP COLUMN "untappd_username" CASCADE;
+  type: run_sql

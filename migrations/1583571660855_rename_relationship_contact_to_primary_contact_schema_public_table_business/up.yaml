@@ -1,0 +1,7 @@
+- args:
+    name: contact
+    new_name: primary_contact
+    table:
+      name: business
+      schema: public
+  type: rename_relationship

@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: alter table "public"."contact" rename column "email_address" to "email";
+  type: run_sql

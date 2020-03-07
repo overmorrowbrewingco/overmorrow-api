@@ -1,0 +1,6 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."contact" ALTER COLUMN "business_location_id" SET NOT
+      NULL;
+  type: run_sql
