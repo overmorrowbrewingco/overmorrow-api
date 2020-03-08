@@ -1,0 +1,10 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."business_location" ADD COLUMN "city" text;
+  type: run_sql
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."business_location" ALTER COLUMN "city" DROP NOT NULL;
+  type: run_sql

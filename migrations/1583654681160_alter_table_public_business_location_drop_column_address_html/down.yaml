@@ -1,0 +1,17 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."business_location" ADD COLUMN "address_html" text;
+  type: run_sql
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."business_location" ALTER COLUMN "address_html" DROP
+      NOT NULL;
+  type: run_sql
+- args:
+    cascade: false
+    read_only: false
+    sql: COMMENT ON COLUMN "public"."business_location"."address_html" IS E'An address
+      wrapped in html spans (from the Google Maps API) to render it formatted on pages';
+  type: run_sql

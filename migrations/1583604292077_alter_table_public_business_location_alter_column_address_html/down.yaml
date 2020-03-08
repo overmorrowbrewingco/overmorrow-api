@@ -1,0 +1,6 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."business_location" ALTER COLUMN "address_html" DROP
+      NOT NULL;
+  type: run_sql

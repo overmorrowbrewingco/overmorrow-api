@@ -1,0 +1,6 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."contact" ADD COLUMN "primary" boolean NULL DEFAULT
+      false;
+  type: run_sql

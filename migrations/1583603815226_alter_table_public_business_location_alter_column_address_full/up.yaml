@@ -1,0 +1,6 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: COMMENT ON COLUMN "public"."business_location"."address_full" IS E'A full
+      address, formatted to be human readable';
+  type: run_sql

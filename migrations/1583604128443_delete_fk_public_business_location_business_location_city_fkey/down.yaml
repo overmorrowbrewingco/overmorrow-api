@@ -1,0 +1,6 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: alter table "public"."business_location" add foreign key ("city") references
+      "public"."city"("value") on update no action on delete no action;
+  type: run_sql

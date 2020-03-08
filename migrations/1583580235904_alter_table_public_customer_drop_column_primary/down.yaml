@@ -1,0 +1,15 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."customer" ADD COLUMN "primary" bool;
+  type: run_sql
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."customer" ALTER COLUMN "primary" DROP NOT NULL;
+  type: run_sql
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."customer" ALTER COLUMN "primary" SET DEFAULT false;
+  type: run_sql

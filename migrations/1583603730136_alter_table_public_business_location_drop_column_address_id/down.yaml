@@ -1,0 +1,18 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."business_location" ADD COLUMN "address_id" uuid;
+  type: run_sql
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."business_location" ALTER COLUMN "address_id" DROP NOT
+      NULL;
+  type: run_sql
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."business_location" ADD CONSTRAINT business_location_address_id_fkey
+      FOREIGN KEY (address_id) REFERENCES "public"."address" (id) ON DELETE restrict
+      ON UPDATE restrict;
+  type: run_sql

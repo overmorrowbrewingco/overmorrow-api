@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: COMMENT ON COLUMN "public"."business_location"."address_html" IS E'';
+  type: run_sql
